@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+svg{
+    display: inline;
+}
+
+.nav-list .nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.dropdown-item{
+    transition: 0.4s;
+    opacity: 0;
+    top: 0.7rem;
+}
+
+/* .dropdown-menu:hover .dropdown-item{
+    visibility: visible;
+    opacity: 1;
+    top: 1.7rem;
+} */
+
+.grow{
+    flex-grow: 1;
+}
+.justify-around{
+    justify-content: space-around;
+}
+
+
+/* .dropdown-item ul li a:hover{
+    color: blue;
+} */
+
+
+.burger{
+    width: 2rem;
+    height: 2rem;
+    transition: 0.5s;
+}
+
+.lineOne,.lineTwo,.lineThree{
+    transition: 0.3s;
+}
+
+
+
+/* 
+body{
+    overflow-x: hidden;
+} */
+
+.top30rem{
+    margin-top: 30rem;
+}
+
+.nav-menu{
+    overflow: hidden;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: 0.6s;
+}
+
+.transformOne{
+    transform:rotate(230deg);
+}
+
+.tranformTwo{
+    transform: rotate(-230deg);
+}
+
+.h-fit{
+    height: fit-content;
+}
+
+.h-0{
+    height: 0px;
+}
+.p-4{
+    padding-right: 1rem;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.showNav{
+    transform: rotateX(0deg);
+}
+
+.dushed{
+    height: 0px;
+    border: 1px;
+    border-color: gray;
+    border-style: dashed;
+    top: 15%;
+    left: 69%;
+}
+
+.architect{
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+
+/* ############## Circle Animation ################*/
+
+
+@keyframes circle{
+    from{
+       transform: scale(1);
+        opacity: 1;
+        background-color: rgb(246, 66, 246);
+
+    }
+    to{
+        transform: scale(8);
+        opacity: 0;
+        background-color: purple;
+    }
+}
+
+.circleAnimationOne{
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-timing-function:ease-in;
+}
+
+.circleAnimationTwo{
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-timing-function:ease-in;
+}
+.circleAnimationThree{
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-timing-function:ease-in;
+}
+.circleAnimationFour{
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-timing-function:ease-in;
+}
+.circleAnimationFive{
+    animation-name: circle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-timing-function:ease-in;
+}
+
+
+/*###########*/
+.categorActive{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.categories .catEle{
+    transition: 0.3s;
+}
+
+.categories + div:hover{
+    color: white;
+}
+
+.fixedWidth{
+    width: 602px;
+    max-width: 602px;
+}
+
+.headphones{
+    transition: 0.3s;
+}
+
+.typingComptuer{
+    transition: 0.3s;
+}
+.opacity-0{
+    opacity: 0;
+}
+
+.opacity-100{
+    opacity: 1;
+}
+
+.scale-95{
+ transform: scale(0.95);
+}
+.scale-100{
+    transform: scale(1);
+}
+
+/*for multiple images*/
+
+.multipleImgs{
+    width: 560px;
+}
+
+.borderUnic{
+    border: 0.5px solid white;
+}
